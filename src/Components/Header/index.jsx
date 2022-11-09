@@ -3,13 +3,13 @@ import "./style.scss";
 
 class Header extends React.Component {
     render() {
-        return <header>
+        return 
             <div className="G-container">
                 <div className="section">
                     <h1>Hi Git</h1>
                 </div>
             </div>
-        </header>
+        
     }
 }
 export default Header

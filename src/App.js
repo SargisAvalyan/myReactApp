@@ -5,7 +5,7 @@ import Header from './Components/Header';
 function App() {
   return (
     <div className="App">
-           <Header/>
+         <p>Hello Git</p>
     </div>
   );
 }

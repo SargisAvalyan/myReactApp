@@ -1,10 +1,17 @@
 import React from 'react';
-// import "./style.scss";
+import "./style.scss";
 
- class Header extends React.Component {
+class Header extends React.Component {
   render() {
     return (
-      <div> Header</div>
+
+      <div >
+        <p className='header'>
+          UNITED COLORD OF BENETTON
+        </p>
+
+      </div>
+
     )
   }
 }

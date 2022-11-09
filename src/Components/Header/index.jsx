@@ -1,15 +1,11 @@
-import React from "react";
-import "./style.scss";
+import React from 'react';
 
-class Header extends React.Component {
-    render() {
-        return 
-            <div className="G-container">
-                <div className="section">
-                    <h1>Hi Git</h1>
-                </div>
-            </div>
-        
-    }
+
+ class Header extends React.Component {
+  render() {
+    return (
+      <div> Header</div>
+    )
+  }
 }
 export default Header

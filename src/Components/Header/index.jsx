@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() {
         return <header>
             <div className="G-container">
-                <div className="header-section">
+                <div className="section">
                     <h1>Hi Git</h1>
                 </div>
             </div>

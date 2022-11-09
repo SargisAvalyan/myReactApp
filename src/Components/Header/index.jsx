@@ -1,15 +1,16 @@
 import React from 'react';
+import Menu from '../Menu';
 import "./style.scss";
 
 class Header extends React.Component {
   render() {
     return (
 
-      <div >
+      <div className='header-main'>
         <p className='header'>
-          UNITED COLORD OF BENETTON
+          UNITED COLORS OF BENETTON
         </p>
-
+        <Menu />
       </div>
 
     )

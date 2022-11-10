@@ -1,7 +1,11 @@
 import React from "react"
+import Container from "../Boxes"
 import "./style.scss"
 
 class Main extends React.Component {
+    state = {
+        counter: "",
+      }
     render() {
         return (
             <div className='main'>
@@ -13,6 +17,14 @@ class Main extends React.Component {
                     Каждый оттенок назван в его стилистике. Так, в палитру вошли: цвет дикой орхидеи,
                     темного ириса, волшебной птицы королька, глубокий огненно-красный и другие.
                 </h2>
+                <div className='main-box'>
+                    <Container name={this.state.counter} info={this.state.info} />
+                    <Container />
+                    <Container />
+                    <Container />
+                </div>
+
+
             </div>
 
 

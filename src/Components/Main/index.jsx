@@ -1,28 +1,69 @@
 import React from "react"
-import Container from "../Boxes"
+import Box from "./Boxes"
 import "./style.scss"
 
 class Main extends React.Component {
-    state = {
-        counter: "",
-      }
+    BoxList = [
+        {
+            colorValue: '#3dcece',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+        },
+        {
+            colorValue: '#234646',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+        {
+            colorValue: '#47ce3d',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+        {
+            colorValue: '#b3ce3d',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+        {
+            colorValue: '#ce3db1',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+        {
+            colorValue: '#5b6b6b',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+        {
+            colorValue: '#8c551e',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+      
+        {
+            colorValue: '#3dcece',
+            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
+            text: ' '
+
+        },
+    ]
     render() {
         return (
             <div className='main'>
-                <p className='main-info'>
-                    United Colors of Benetton выпустил коллаборацию с институтом цвета Pantone
-                </p>
-                <h2 className='main-info-all'>
-                    Итальянский бренд United Colors of Benetton выпустил коллекцию совместно с институтом цвета Pantone.
-                    Каждый оттенок назван в его стилистике. Так, в палитру вошли: цвет дикой орхидеи,
-                    темного ириса, волшебной птицы королька, глубокий огненно-красный и другие.
-                </h2>
-                <div className='main-box'>
-                    <Container name={this.state.counter} info={this.state.info} />
-                    <Container />
-                    <Container />
-                    <Container />
-                </div>
+                {this.BoxList.map((item, index) => {
+                    return <Box key={index}
+                        main={item.description}
+                        colorValue={item.colorValue}>
+                        <h3>{item.text}</h3>
+                    </Box>
+                })}
+
 
 
             </div>

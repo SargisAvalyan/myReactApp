@@ -10,12 +10,12 @@ class Main extends React.Component {
         {
             colorValue: '#4CAE00',
             description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi ut nisi adipiscing lectus egestas mollis. Vestibulum eget nulla ut est imperdiet lacinia. Aliquam blandit augue non sapien. Ut volutpat consectetuer pede. In a quam. Etiam cursus congue mi. Cras pretium euismod augue. Sed faucibus varius velit. Sed pulvinar, libero sit amet imperdiet semper, elit elit suscipit lacus, non sollicitudin mi justo id felis.',
-            image:  `url('${img3}') `
+            image:  img1,
         },
         {
             colorValue: '#B6F000',
             description: 'Итальянский бренд United Colors of Benetton выпустил коллекцию совместно с институтом цвета Pantone. Каждый оттенок назван в его стилистике. Так, в палитру вошли: цвет дикой орхидеи, темного ириса, волшебной птицы королька, глубокий огненно-красный и другие.',
-            text: ' '
+            image: img2,
 
         },
         {

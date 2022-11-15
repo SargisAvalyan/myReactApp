@@ -1,7 +1,5 @@
 import React from "react";
-import img1 from "../../Images/img1.jpg"
-import img2 from "../../Images/img2.jpg"
-import img3 from "../../Images/img3.jpg"
+
 
 
 import './style.scss';
@@ -12,9 +10,7 @@ class Box extends React.Component {
   state = {
     isHover: false,
   }
-  state ={
-    image: Image[img1, img2, img3]
-  }
+
 
   giveBgColor = (e) => {
     this.setState({ isHover: true })
@@ -25,7 +21,7 @@ class Box extends React.Component {
   }
 
   render() {
-    return <div >
+    return <div  >
        <div className={`G-padding-33 ${this.state.isHover ? 'P-hovered' : ''}`} 
       style={{ backgroundColor: this.state.isHover ? this.props.colorValue ? this.props.colorValue : 'black' : 'transparent'  }}
       onMouseLeave={this.removeBgColor}
